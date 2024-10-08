@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .nav {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      border-radius: 5px;
+      list-style: none ;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      position: sticky;
+      top: 0;
+      overflow: auto;
+    }
+    .nav ul {
+      display: flex;
+      flex-direction: row;
+      margin-right: 20px;
+    }
+    .nav li {
+      float: left;
+      text-align:center;
+    }
+    .nav li a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      padding:15px 20px;
+    }
+    .nav li a:hover {
+      color: rgb(85, 0, 255);
+    }
+    #top {
+       display: flex;
+       font-family: fantasy;
+       line-height:60px;
+       font-size:30px;
+       padding: 0 50px;
+       color: white;
+       width:40%;
+    }
+
+    header {
+      background-color: #333;
+      background: #333 url('https://i0.wp.com/theluxurytravelexpert.com/wp-content/uploads/2014/06/p5310783.jpg') no-repeat center center/cover;
+      color: #fff;
+      height: 100vh;
+      text-align: center;
+      padding: 2rem;
+      padding-top: 15rem;
+    }
+
+    header h1 {
+      font-size: 5rem;
+      color: #f4f4f4;
+      text-decoration: overline;
+    }
+
+    header p {
+      margin: 3rem 0;
+      font-size: 2rem;
+      color: #f4f4f4;
+      text-decoration:overline;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #00000087;
+      color: rgb(255, 255, 255);
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+    }
+    #sec1 {
+      padding: 2rem;
+      background-color: bisque;
+      border: 2px black solid;
+      margin: auto;
+    }
+    section h3 {
+      text-align: center;
+      text-decoration: underline;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    @media(max-height: 450px) {
+      header {
+        padding-top: 5rem;
+      }
+    }
+    #img {
+      width: 450px;
+      height: 400px;
+      float: left;
+      padding-bottom: 20px;
+      border-radius: 10%;
+    }
+    #p1 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 2px;
+    }
+    #sec1 a {
+      display: inline-block;
+      text-decoration: none;
+      background: #00000087;
+      color: rgb(255, 255, 255);
+      padding: 0.75rem 2rem;
+      font-size: 1rem;
+      position: relative;
+      left: 400px;
+      top: 30px;
+    }
+    #sec1 a :hover {
+      color: lightcoral;
+    }
+    .box1{
+      float: left;
+      width: 505px;
+      height: auto;
+      background-color: linen;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .box1 p{
+      margin: 5px;
+      text-align: center;
+    }
+    #pc1 {
+      margin-left: 140px;
+      width: 100px;
+      height: 100px;
+    }
+    .box2 {
+      float: left;
+      width: 509px;
+      height: auto;
+      background-color: rgb(164, 216, 249);
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .box2 p{
+      margin: 5px;
+      text-align: center;
+    }
+    #pc2 {
+      align-items: center;
+      margin-left: 170px;
+      width: 170px;
+      height: 170px;
+    }
+    .box3 {
+      float:right;
+      width: 505px;
+      height: auto;
+      background-color: linen;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .box3 p{
+      margin: 5px;
+      text-align: center;
+    }
+    #pc3 {
+      align-items: center;
+      margin-left: 170px;
+      width: 100px;
+      height: 100px;
+    }
+    .foot{
+      text-align: center;
+      font-size: 1.2rem;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      background-color: rgba(0, 0, 0, 0.67);
+      color: white;
+      width: 100%;
+      height: fit-content;
+      position:static;  
+      left: 10px;  
+      bottom: 5px;  
+      right: 10px; 
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div id="top">
+      Le Meridien
+    </div>
+    <ul>
+      <li><a href="/HomePG.html">Home</a></li>
+      <li><a href="/about.html">About us</a></li>
+      <li><a href="/contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  <header>
+    <h1>Enjoy your stay</h1>
+    <p>Experience the Joy in our hotel</p>
+    <a href="/about.html" class="btn">About us</a>
+  </header>
+  <section id="sec1">
+    <h3><b>The History</b></h3>
+    <p id="p1"><img id="img" src="https://th.bing.com/th/id/R.52a94f51fce9a06b3d070ec9032b325c?rik=luCmNU416BHpSA&riu=http%3a%2f%2f644ca584abd471d829b5-f9ed408e43db34bb5d9eda84f8b8789f.r99.cf1.rackcdn.com%2flps%2fassets%2fu%2fmer1919ex-160186-Hotel-Exterior-view.jpg&ehk=5x6PbzP9fwd%2bg%2bGNtaGAR2Br87hJzeg33F4ZGDP8i4s%3d&risl=&pid=ImgRaw&r=0"> Air France established Meridien Hotels in 1972. The chain's hotels offered accommodation for Air France flight crews in major hub cities, and the airline promoted the chain and handled reservations for it.
+       The first Meridien Hotels property was a 1,000-room hotel in the heart of Paris, the Hotel Meridien Paris, today known as<i><b> Le Méridien Etoile</b></i>. The chain grew to 10 hotels in Europe and Africa within two years and had 21 hotels spanning the globe within six years.
+       In 1994, as part of a cost-cutting measure, Air France sold its controlling interest in Meridien Hotels Inc., a 57.3% stake, to the UK-based Forte Group for $207 million. Meridien Hotels numbered 58 properties at the time. The sale followed an 18-month battle for control of the company between Forte, German-based Kempinski and French hospitality company Accor. The French government was reported to have favored Accor's bid, wishing to keep the company French-owned,...</p>
+       <a href="/Readmore.html" class="btn1">Read more</a>
+  </section>
+  <section id="sec2">
+     <div class="box1"><br>
+      <h3><b><u>Location</u></b></h3><br>
+      <p><img id="pc1" src="https://freeiconshop.com/wp-content/uploads/edd/location-pin-compact-flat.png"></p><br><br>
+      <p>Our hotels are mainly situated near the sea or where we can easily enjoy the beauty of the nature. These locations ease our mind. They can also act as a good stress relief. Ther are hotels situated in the city, those are mainly used by business people. Feel free to ask.</p>
+     </div>
+     <div class="box2"><br>
+      <h3><b><u>Free meals</u></b></h3>
+      <p><img id="pc2" src="https://th.bing.com/th/id/R.9014df1934508947178b1e5c2b8b72e1?rik=6Z8PEBjQUO72yA&riu=http%3a%2f%2fwww.newdesignfile.com%2fpostpic%2f2012%2f08%2fdinner-plate-icon_244863.png&ehk=iY%2b4S5Ys%2b0OWe%2b%2ffWKeG%2bgbBRAaFfuzNJ9ZPnXZg4IQ%3d&risl=&pid=ImgRaw&r=0"></p>
+      <p>We also have a great kitchen with experienced cheif. We provide a complimentry breakfast with each package. You can order the meals as per the menu, for the complimentry breakfast. We have special menu on special events.</p>
+     </div>
+     <div class="box3"><br>
+      <h3><b><u>Fitness Room</u></b></h3><br><br>
+      <p><img id="pc3" src="https://cdn2.iconfinder.com/data/icons/location-map-simplicity/512/fitness_center-512.png"></p><br>
+      <p>We also have Fitness area. These are available eith the package. We also provide certified trainers on this area. This are available seperately. You can even join and take a membership card from any of our branch. They are available even in premium package.</p>
+     </div>
+  </section>
+  <footer class="foot">
+    <i>Le MERIDIEN</i>&copy; 2022, All rights reserved
+  </footer>
+</body>
+</html>
